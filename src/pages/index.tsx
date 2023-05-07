@@ -11,7 +11,7 @@ interface IndexProps {
   categories: string[];
 }
 
-const Home: NextPage = (props: IndexProps) => {
+const Home: NextPage<IndexProps> = (props: IndexProps) => {
 
   const [category, setCategory] = useState<string>("random");
 
